@@ -24,3 +24,10 @@ class manipulacion:
         except ValueError:
             print("Error: el código debe ser números")
 
+    def mostrar(self):
+        if not self.libros:
+            print("No hay libros registrados")
+        else:
+            print("\Listado de libros")
+            for i, datos in enumerate(self.libros, start=1):
+                print(f"{i}. {datos.mostrar_libro()}")
