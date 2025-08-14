@@ -31,3 +31,12 @@ class manipulacion:
             print("\Listado de libros")
             for i, datos in enumerate(self.libros, start=1):
                 print(f"{i}. {datos.mostrar_libro()}")
+                print()
+
+    def eliminar(self):
+        Nombre_Busca = input("Ingrese el nombre del libro que desea eliminar: ")
+        for dat in self.libros:
+            if dat.Codigo.lower() == Nombre_Busca.lower():
+                self.libros.remove(dat)
+                print("Libro eliminado")
+                return
