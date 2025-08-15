@@ -50,3 +50,16 @@ while True:
     print("2. mostrar libro")
     print("3. Eliminar libro")
     print("4. Salir")
+    try:
+        opcion = int(input("Ingese una opcion"))
+        match opcion:
+            case 1:
+                ingreso.agregar_libro()
+            case 2:
+                ingreso.mostrar()
+            case 3:
+                ingreso.eliminar()
+            case 4:
+                print("Opcion invalida")
+    except ValueError:
+        print("Debes ingresar un numero entero")
