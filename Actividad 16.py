@@ -40,3 +40,8 @@ class manipulacion:
                 self.libros.remove(dat)
                 print("Libro eliminado")
                 return
+            print("El libro no existe")
+
+ingreso = manipulacion()
+
+while True:
