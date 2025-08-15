@@ -45,3 +45,8 @@ class manipulacion:
 ingreso = manipulacion()
 
 while True:
+    print("------Bienvenido a la biblioteca--")
+    print("1. Agregar libro")
+    print("2. mostrar libro")
+    print("3. Eliminar libro")
+    print("4. Salir")
